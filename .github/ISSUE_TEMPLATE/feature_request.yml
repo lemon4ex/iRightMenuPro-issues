@@ -1,0 +1,29 @@
+name: 功能建议 / Feature Request
+description: 提出一个功能建议 | Suggest a new feature
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 功能描述 / Feature Description
+      description: 清晰描述你期望的功能
+      placeholder: 我希望能够...
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: 使用场景 / Use Case
+      description: 为什么你需要这个功能？描述你的实际使用场景
+      placeholder: 我经常需要...
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 补充说明 / Additional Context
+      description: 其他补充信息、截图、参考链接等
+    validations:
+      required: false

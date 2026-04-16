@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: QQ 交流群 / QQ Group
+    url: https://qm.qq.com/cgi-bin/qm/qr?k=placeholder
+    about: 加入 Pro 专属 QQ 群（1097016301）获取即时帮助 | Join Pro QQ group for instant support
+  - name: 插件开发文档 / Plugin Docs
+    url: https://rm.byteage.com/zh/docs/plugin-guide
+    about: 插件开发相关问题请先查阅文档 | Check docs for plugin development questions

@@ -1,0 +1,85 @@
+name: Bug 报告 / Bug Report
+description: 报告一个 Bug | Report a bug
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述 / Description
+      description: 清晰描述你遇到的问题
+      placeholder: 描述问题...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 重现步骤 / Steps to Reproduce
+      description: 详细列出重现该问题的步骤
+      placeholder: |
+        1. 打开 ...
+        2. 点击 ...
+        3. 出现 ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望行为 / Expected Behavior
+      description: 你期望发生什么
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际行为 / Actual Behavior
+      description: 实际发生了什么
+    validations:
+      required: true
+
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS 版本 / macOS Version
+      description: "系统设置 → 通用 → 关于 中查看"
+      placeholder: "例如: macOS 15.4.1"
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: iRightMenu Pro 版本 / App Version
+      description: 在 关于页面 中查看
+      placeholder: "例如: 2.2.0 (41)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: processor
+    attributes:
+      label: 处理器 / Processor
+      options:
+        - Apple Silicon
+        - Intel
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日志文件 / Log Files
+      description: "偏好设置 → 诊断 → 打开日志文件夹，粘贴相关日志内容"
+      render: text
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截图或录屏 / Screenshots
+      description: 拖拽图片到此处上传
+    validations:
+      required: false
